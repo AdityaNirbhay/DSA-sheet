@@ -1,0 +1,14 @@
+
+Problem link: https://practice.geeksforgeeks.org/problems/reverse-a-string/
+
+
+
+string reverseWord(string str){
+    
+  //Your code here
+  int n = str.length() - 1;
+  for(int i=0;i<n/2;i++){
+      swap(str[i],str[n-i]);
+  }
+  return str;
+}
